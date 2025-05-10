@@ -3,227 +3,179 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Portfolio</title>
-    <link rel="stylesheet" href="style.css">
+    <title>Mithali Kunder | Portfolio</title>
+    <!-- Bootstrap CSS -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet">
+    <!-- Font Awesome -->
     <script src="https://kit.fontawesome.com/777c11566c.js" crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="style.css">
 </head>
 <body>
-    <div id="header">
-        <div class="container">
-            <nav>
-                <img src="images/Mithali(new).png" class="logo">
-                <ul id="sidemenu">
-                    <li><a href="#header">Home</a></li>
-                    <li><a href="#about">About</a></li>
-                   <!-- <li><a href="#services">Services</a></li>-->
-                    <li><a href="#portfolio">Portfolio</a></li>
-                    <li><a href="#contact">Contact</a></li>
-                    <i class="fa-solid fa-circle-xmark" onclick="closemenu()"></i>
+
+<!-- Navbar -->
+<nav class="navbar navbar-expand-lg navbar-light bg-light fixed-top shadow-sm">
+    <div class="container">
+        <a class="navbar-brand" href="#">Mithali <span>Kunder</span></a>
+        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
+            <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarNav">
+            <ul class="navbar-nav ms-auto">
+                <li class="nav-item"><a class="nav-link" href="#home">Home</a></li>
+                <li class="nav-item"><a class="nav-link" href="#about">About</a></li>
+                <li class="nav-item"><a class="nav-link" href="#portfolio">Portfolio</a></li>
+                <li class="nav-item"><a class="nav-link" href="#contact">Contact</a></li>
+            </ul>
+        </div>
+    </div>
+</nav>
+
+<!-- Hero -->
+<section class="hero" id="home">
+    <div class="container">
+        <h1>Hi, I'm <span>Mithali Kunder</span></h1>
+        <p class="lead">Web Developer | UX/UI Designer | Data Analytics Enthusiast</p>
+    </div>
+</section>
+
+<!-- About -->
+<section class="py-5" id="about">
+    <div class="container">
+        <h2 class="section-title">About Me</h2>
+        <div class="row align-items-center">
+            <div class="col-md-4">
+                <img src="images/user1.jpeg" alt="Mithali" class="img-fluid rounded">
+            </div>
+            <div class="col-md-8">
+                <p>I’m an MCA student and aspiring Web Developer with hands-on experience in building responsive websites and intuitive user interfaces using HTML, CSS, JavaScript, and Bootstrap. I’ve recently begun exploring React.js to expand my modern front-end development skills.
+                    With a strong understanding of UI/UX principles and testing practices, I’m passionate about solving real-world problems through clean, efficient code.
+                    Continuously driven by the evolving tech landscape, I actively work on real-world projects and prioritize continuous learning. My goal is to contribute to innovative solutions while growing professionally in a dynamic development environment.</p>
+                <ul class="list-unstyled">
+                    <li><strong>Skills:</strong>
+                        <ul>
+                            <li><strong>Languages:</strong> HTML, CSS, Java</li>
+                            <li><strong>Frameworks:</strong> Laravel, Bootstrap, React (Beginner)</li>
+                            <li><strong>Databases:</strong> MySQL</li>
+                            <li><strong>Operating Systems:</strong> Windows, Linux</li>
+                            <li><strong>Tools:</strong> GitHub, VS Code, Android Studio, Figma, Canva</li>
+                            <li><strong>Data Analytics:</strong> SQL, Basic Statistics, Data Visualization, Excel</li>
+                            <li><strong>Design & Analytics:</strong> UX/UI Design, Prototyping</li>
+                            <li><strong>Testing:</strong> Manual Testing, Functional Testing, UI Testing</li>
+                            <li><strong>Soft Skills:</strong> Communication, Creativity, Project Management, Teamwork</li>
+                        </ul>
+                    </li>
+                    <li><strong>Experience:</strong>
+                        <ul>
+                            <li>Web Developer Intern at Udupi Web Solutions – Jan 2025 – Present</li>
+                            <li>Web Development Intern at Prodigy InfoTech – July 2024 (1 month)</li>
+                        </ul>
+                    </li>
+                    <li><strong>Education:</strong>
+                        <ul>
+                            <li>MCA at MIT Manipal (2023 - Present)</li>
+                            <li>BCA at MGM College Udupi (2020 - 2023)</li>
+                            <li>PUC at MGM College Udupi (2018 - 2020)</li>
+                            <li>Vidyodaya Public School Udupi (2010 - 2018)</li>
+                            <li>Swami Vivekananda International School Mumbai (2003 - 2011)</li>
+                        </ul>
+                    </li>
                 </ul>
-                <i class="fa-solid fa-ellipsis-vertical" onclick="openmenu()"></i>
-            </nav>
-            
-            <div class="header-text">
-                <p>Web Developer</p>
-                <h1>Hi,I am <span>Mithali Kunder</span></h1>
             </div>
         </div>
     </div>
-  
-    <!--ABOUT-->
-    <div id="about">
-        <div class="container">
-            <div class="row">
-                <div class="about-col-1">
-                    <img src="images/user1.jpeg" alt="">
-                </div>
+</section>
 
-                <div class="about-col-2">
-                    <h1 class="sub-title">About</h1>
-                    <p>Hi, I am Mithali Kunder, currently pursuing my Master's in Computer Applications (MCA). With a strong passion for technology and an insatiable curiosity,
-                         I am always eager to learn and explore new areas in the tech world.
-                         I believe in the power of continuous learning.To secure a role in a dynamic tech company where I can apply my skills, 
-                         contribute to innovative projects, and grow professionally</p>
-                         <div class="tab-titles">
-                            <p class="tab-links active-link" onclick="opentab('skills')">Skills</p>
-                            <p class="tab-links" onclick="opentab('experience')">Experience</p>
-                            <p class="tab-links" onclick="opentab('education')">Education</p>
-                         </div>
-
-                         <div class="tab-contents active-tab" id="skills">
-                            <ul>
-                                <li><span>Frontend</span><br>Responsive Web Page</li>
-                                <li><span>Web Develpoment</span><br>Web Application</li>
-                                
-                            </ul>
-                         </div>
-                         <div class="tab-contents" id="experience">
-                            <ul>
-                                <li><span>Prodigy InfoTech Internship</span><br>For Web Development started from 1st July 2024 to 31st July 2024</li>
-                               
-                                
-                            </ul>
-                         </div>
-                         <div class="tab-contents" id="education">
-                            <ul>
-                                <li><span>2023-Present</span><br>MCA at MIT Manipal</li>
-                                <li><span>2020-2023</span><br>BCA from Mahatma Gandhi Memorial Colleg Udupi</li>
-                                <li><span>2018-2020</span><br>Pre-University from Mahatma Gandhi Memorial Colleg Udupi</li>
-                                <li><span>2010-2018</span><br>Schooling from Vidyodaya Public School Udupi</li>
-                                <li><span>2003-2010</span><br>Schooling from  Swami Vivekananda International School Mumbai</li>
-                            </ul>
-                         </div>
-                </div>
-            </div>
-        </div>
-    </div>
-
-
-    <!--------------Service---------->
-    <!--<div id="services">
-        <div class="container">
-            <h1 class="subtitle">My Services</h1>
-            <div class="services-list">
-                <div>
-                    <i class="fa-solid fa-code"></i>
-                    <h2></h2>
-                    <p>
-                         <a href="#">Learn More</a>
-                    </p>
-                </div>
-                <div>
-                    <i class="fa-solid fa-crop-simple"></i>
-                    <h2></h2>
-                    <p>
-                         <a href="#">Learn More</a>
-                    </p>
-                </div>
-            </div>
-        </div>
-    </div>-->
-    
-    
-    <!--portfolio-->
-    <div id="portfolio">
-        <div class="container">
-            <h1 class="sub-title">My Work</h1>
-            <div class="work-list">
-                <div class="work">
-                    <img src="images/works-1(new).png">
-                    <div class="layer">
-                        <h3>Responsive StopWatch</h3>
-                        <p>This project featuring start, restart, and lap functionalities.
-                             This stopwatch adapts seamlessly to different screen sizes, 
-                             ensuring a smooth user experience across all devices.</p>
-                        <a href="https://mithali123.github.io/Stop-Watch/
-                        "><i class="fa-solid fa-arrow-up-right-from-square"></i></a>
+<!-- Portfolio -->
+<section class="py-5 bg-light" id="portfolio">
+    <div class="container">
+        <h2 class="section-title">My Work</h2>
+        <div class="row g-4">
+            <div class="col-md-4">
+                <div class="card work-card">
+                    <img src="images/works-1(new).png" class="card-img-top" alt="Stopwatch">
+                    <div class="card-body">
+                        <h5 class="card-title">Responsive StopWatch</h5>
+                        <p class="card-text">A stopwatch with start, restart, and lap functionalities that adapts to all screen sizes.</p>
+                        <a href="https://mithali123.github.io/Stop-Watch/" target="_blank" class="btn btn-outline-primary">View Project</a>
                     </div>
                 </div>
-                <div class="work">
-                    <img src="images/works-2.png">
-                    <div class="layer">
-                    <h3>Responsive Website Tira Jewellery</h3>
-                    <p>This website is about our Jewellery Shoppiing</p>
-                    <a href="https://mithali123.github.io/Tira_Jewellery/"><i class="fa-solid fa-arrow-up-right-from-square"></i></a>
-                </div>
             </div>
-                <div class="work">
-                    
-                    <img src="images/works-3.png">
-                    <div class="layer">
-                    <h3>Weather App</h3>
-                    <p>This Weather App provides real-time updates on temperature, humidity, 
-                        and wind speed for any location.The user-friendly interface ensures easy navigation,
-                         while the sleek design offers a seamless user experience. </p>
-                    <a href="https://mithali123.github.io/Weather-App/"><i class="fa-solid fa-arrow-up-right-from-square"></i></a>
-                </div>
-            </div>
-            </div>
-            <a href="https://github.com/Mithali123/" class="btn">Check The Code</a>
 
+            <div class="col-md-4">
+                <div class="card work-card">
+                    <img src="images/works-2.png" class="card-img-top" alt="Tira Jewellery">
+                    <div class="card-body">
+                        <h5 class="card-title">Tira Jewellery Website</h5>
+                        <p class="card-text">An elegant and responsive shopping website designed for a jewelry store.</p>
+                        <a href="https://mithali123.github.io/Tira_Jewellery/" target="_blank" class="btn btn-outline-primary">View Project</a>
+                    </div>
+                </div>
+            </div>
+
+            <div class="col-md-4">
+                <div class="card work-card">
+                    <img src="images/works-3.png" class="card-img-top" alt="Weather App">
+                    <div class="card-body">
+                        <h5 class="card-title">Weather App</h5>
+                        <p class="card-text">Get real-time weather updates, temperature, humidity, and more with this intuitive UI app.</p>
+                        <a href="https://mithali123.github.io/Weather-App/" target="_blank" class="btn btn-outline-primary">View Project</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="text-center mt-4">
+            <a href="https://github.com/Mithali123/" class="btn btn-primary">View More on GitHub</a>
         </div>
     </div>
+</section>
 
-    
-    
-    <!--------------Contact---------->
-     <div id="contact">
-        <div class="container">
-            <div class="row">
-                <div class="contact-left">
-                    <h1 class="sub-title">Contact Me</h1>
-                    <p><i class="fa-solid fa-paper-plane"></i>mithali.kunder17@gmail.com</p>
-                    <p><i class="fa-solid fa-phone"></i>7483959076</p>
-                    <div class="social-icons">
-        
-                        <a href="https://www.linkedin.com/in/mithali-kunder"><i class="fa-brands fa-linkedin"></i></a>
-                        <a href="https://github.com/Mithali123/"><i class="fa-brands fa-square-github"></i></a>
+<!-- Contact -->
+<section class="py-5" id="contact">
+    <div class="container">
+        <h2 class="section-title">Contact Me</h2>
+        <div class="row">
+            <div class="col-md-6">
+                <p class="contact-info"><i class="fa-solid fa-paper-plane"></i> mithali.kunder17@gmail.com</p>
+                <p class="contact-info"><i class="fa-solid fa-phone"></i> 7483959076</p>
+                <div class="mb-3">
+                    <a href="https://www.linkedin.com/in/mithali-kunder" target="_blank" class="me-3"><i class="fa-brands fa-linkedin fa-2x"></i></a>
+                    <a href="https://github.com/Mithali123/" target="_blank"><i class="fa-brands fa-github fa-2x"></i></a>
+                </div>
+                <a href="images/Resume-8.pdf" download class="btn btn-outline-primary">Download CV</a>
+            </div>
+            <div class="col-md-6">
+                <form id="contact-form">
+                    <div class="mb-3">
+                        <input type="text" class="form-control" name="Name" placeholder="Your Name" required>
                     </div>
-                    <a href="images/Mithali_Kunder_Resume.pdf" download class="btn btn2">Download CV</a>
-                </div>
-                <div class="contact-right">
-                    <form id ="contact-form" action="">
-                        <input type="text" name="Name" placeholder="Your name" required>
-                        <input type="email" name="Email" placeholder="Your email" required>
-                        <textarea name="Message"  rows="6" placeholder="Your message"></textarea>
-                        <button type="submit" class="btn btn2">Submit</button>
-                    </form>
-                    <span id="msg"></span>
-                </div>
+                    <div class="mb-3">
+                        <input type="email" class="form-control" name="Email" placeholder="Your Email" required>
+                    </div>
+                    <div class="mb-3">
+                        <textarea class="form-control" name="Message" rows="4" placeholder="Your Message" required></textarea>
+                    </div>
+                    <button type="submit" class="btn btn-primary">Submit</button>
+                    <div id="msg" class="mt-3"></div>
+                </form>
             </div>
         </div>
-        <div class="copyright">
-            <p></p>
-        </div>
-     </div>
-    
-    <!--JS-->
-    <script>
-        var tablinks=document.getElementsByClassName('tab-links');
-        var tabcontents=document.getElementsByClassName('tab-contents');
-        function opentab(tabname)
-        {
-            for(tablink of tablinks)
-            {
-                tablink.classList.remove("active-link");
-            }
-            for(tabcontent of tabcontents)
-            {
-                tabcontent.classList.remove("active-tab");
-            }
-            event.currentTarget.classList.add("active-link");
-            document.getElementById(tabname).classList.add("active-tab");
+    </div>
+</section>
 
-        }
-    </script>
-    <script>
-        var sidemenu1=document.getElementById("sidemenu");
-        function openmenu()
-        {
-            sidemenu1.style.right="0";
-        }
-        function closemenu()
-        {
-            sidemenu1.style.right="-200px";
-        }
-    </script>
-    <script>
-    // Handle form submission
-    const form = document.getElementById("contact-form");
-    const msg = document.getElementById("msg");
+<!-- Footer -->
+<div class="footer">
+    <p>&copy; 2025 Mithali Kunder. All rights reserved.</p>
+</div>
 
-    form.addEventListener("submit", function(event) {
+<!-- JS -->
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
+<script>
+    document.getElementById("contact-form").addEventListener("submit", function(event) {
         event.preventDefault();
-        msg.textContent = "Message has been sent successfully!";
-        msg.style.color = "green";
-        form.reset();
-        // Scroll to the top of the page
-        setTimeout(function(){
-            window.scrollTo({ top: 0, behavior: 'smooth' });
-        }, 3000);
-        setTimeout(function(){
-            msg.textContent = "";
-        }, 6000);
+        document.getElementById("msg").textContent = "Message has been sent successfully!";
+        document.getElementById("msg").style.color = "green";
+        this.reset();
+        setTimeout(() => document.getElementById("msg").textContent = "", 5000);
     });
 </script>
 </body>
